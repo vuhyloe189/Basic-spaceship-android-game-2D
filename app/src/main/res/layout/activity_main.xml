@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/highScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="High Score: 0"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="top"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="210dp"
+            android:fontFamily="@font/robotomedium"
+            android:gravity="bottom"
+            android:shadowColor="@color/grey"
+            android:shadowDx="-7"
+            android:shadowDy="-7"
+            android:shadowRadius="5"
+            android:text="Space WarShip"
+            android:textColor="@color/white"
+            android:textSize="44sp" />
+
+        <TextView
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/robotabold"
+            android:gravity="bottom"
+            android:shadowColor="@color/grey"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="5"
+            android:text="Play"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/volume"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@id/main"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/ic_baseline_volume_up_24" />
+
+
+</RelativeLayout>
